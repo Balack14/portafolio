@@ -1,0 +1,756 @@
+/* Estilos generales */
+
+
+.btn-grande-contactanos {
+   margin-top: auto;
+   align-self: center !important; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Paleta de colores del proyecto:
+   Rojo principal: #c1121f
+   Blanco: #ffffff
+   Negro/oscuro: #1a1a1a
+   Gris claro: #f5f5f5
+   Gris medio: #888888
+*/
+
+h1 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 300;
+    font-size: 36px;
+    color: #1a1a1a;
+}
+
+h2 {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    
+    color: #1a1a1a;
+}
+
+h3 {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1a1a1a;
+}
+
+p {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #1a1a1a;
+    line-height: 1.6em;
+}
+
+a {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-color: #888888;
+}
+
+/* Botones */
+
+.btn-grande {
+    display: inline-block;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: normal;
+    background-color: #c1121f;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 16px 32px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 24px;
+    align-self: flex-start;
+}
+
+.btn-grande:hover  { background-color: #a00f1a; }
+.btn-grande:active { background-color: #7a0b14; transform: translateY(2px); }
+
+.btn-pequeno-stroke {
+    display: inline-block;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #BC1823;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid #BC1823;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-pequeno-stroke:hover  { color: #656565; border-color: #656565; }
+.btn-pequeno-stroke:active { color: #8B121A; border-color: #8B121A; transform: translateY(2px);}
+
+.btn-pequeno-fill {
+    display: inline-block;
+    font-family: "Source Sans 3", sans-serif;   font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #c1121f;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+}
+
+.btn-pequeno-fill:hover  { background-color: #a00f1a; }
+.btn-pequeno-fill:active { background-color: #7a0b14; }
+
+/* Overlay men de hamburguesa */
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-contenido {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overlay a {
+    font-family: "Libre Baskerville", serif;    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.overlay a:visited { color: #ffffff; }
+.overlay a:hover   { color: #c1121f; }
+.overlay a:active  { color: #888888; }
+
+.overlay a.activo-overlay { color: #c1121f; }
+
+.cerrar-overlay {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 60px;
+    z-index: 101;
+    width: auto !important;
+}
+
+/* header / nav */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: #ffffff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 48px;
+    background-color: #ffffff;
+}
+
+.nav-logo .material-icons {
+    font-size: 24px;
+    color: #c1121f;
+}
+
+/* Links del nav — ocultos en móvil */
+.nav-links {
+    display: none;
+}
+
+.nav-item {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.nav-item a:link    { text-decoration: none; color: #1a1a1a; }
+.nav-item a:visited { text-decoration: none; color: #1a1a1a; }
+.nav-item a:hover   { text-decoration: none; color: #c1121f; }
+.nav-item a:active  { text-decoration: none; color: #888888; }
+
+.nav-item a.activo-nav { color: #c1121f; }
+
+/* Botón hamburguesa */
+.menu-hamburguesa {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: #1a1a1a;
+    transition: color 0.3s;
+}
+
+.menu-hamburguesa:hover { color: #c1121f; }
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    background-color: #1a1a1a;
+}
+
+.footer-politicas {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #888888;
+    text-decoration: none;
+}
+
+.footer-politicas:hover { color: #ffffff; }
+
+/* Linea separadora */
+
+.linea-separadora {
+    border: none;
+    border-top: 1px solid #1a1a1a;
+    margin: 0 16px;
+}
+
+/* Pagina inicio */
+
+main.inicio {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px;
+}
+
+/* Hero */
+ 
+.inicio-hero {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        "titulo"
+        "imagen"
+        "subtitulo"
+        "boton";
+    gap: 16px;
+}
+
+.inicio-hero figure {
+    grid-area: imagen;
+    margin: 0;
+}
+
+.inicio-hero h1 {
+    grid-area: titulo;
+    font-size: 36px;
+    font-style: italic;
+    
+}
+
+.inicio-hero .subtitulo {
+    grid-area: subtitulo;
+    font-size: 14px;
+}
+
+.inicio-hero .btn-grande {
+    grid-area: boton;
+    justify-self: start;
+}
+
+
+.inicio-hero {
+    width: 100%;
+}
+
+.imagen-hero {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+}
+
+.imagen-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* Servicios */
+
+
+.inicio-servicios {
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.servicios-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicios-contenido {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+}
+
+.servicio-tarjeta {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+
+.servicio-imagen {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Mantener la proporción cuadrada */
+    margin: 0;
+}
+
+.servicio-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Sobre nosotros */
+.inicio-sobre-nosotros {
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sobre-nosotros-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.personas {
+    display: flex;
+    gap: 8px;
+}
+
+.persona-imagen {
+    flex: 1;
+    height: 150px;
+    margin: 0;
+    display: none; /* Ocultar las imágenes de las personas en la versión móvil */
+}
+
+.persona-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =============================================
+   PÁGINA: PROYECTOS — MÓVIL
+   ============================================= */
+
+main.proyectos h1 { text-align: center; }
+
+main.proyectos {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+/* Filtros */
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.btn-filtro {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-filtro:hover      { background-color: #1a1a1a; color: #ffffff; }
+.btn-filtro.activo-filtro { background-color: #c1121f; color: #ffffff; border-color: #c1121f; }
+
+/* Grid de proyectos */
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.proyecto-tarjeta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.proyecto-imagen {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+}
+
+.proyecto-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: auto;
+}
+
+.modal.activo { display: flex; align-items: center; justify-content: center; }
+
+.modal-contenido {
+    position: relative;
+    background-color: #1a1a1a;
+    width: 90%;
+    max-width: 900px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.modal-cerrar {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.modal-cerrar .material-icons { font-size: 24px; }
+.modal-cerrar:hover .material-icons { color: #c1121f; }
+
+.modal-imagen {
+    width: 100%;
+    margin: 0;
+}
+
+.modal-imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* =============================================
+   PÁGINA: SERVICIOS — MÓVIL
+   ============================================= */
+
+main.servicios {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+main.servicios h1 { margin-bottom: 24px; }
+
+.servicio-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px 0;
+}
+
+.servicio-texto { display: flex; flex-direction: column; gap: 8px; }
+
+/* =============================================
+   PÁGINA: SOBRE NOSOTROS — MÓVIL
+   ============================================= */
+
+main.sobre-nosotros {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+.miembro {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.miembro-imagen {
+    width: 100%;
+    max-width: 263px;
+    height: 296px;
+    margin: 0;
+}
+
+.miembro-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.miembro-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.linea-nombre {
+    border: none;
+    border-top: 1px solid #1a1a1a;
+    width: 264px;
+}
+
+/* =============================================
+   PÁGINA: CONTACTO — MÓVIL
+   ============================================= */
+
+main.contacto {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.formulario-contacto {
+    width: 100%;
+    max-width: 496px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.label-campo {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #888888;
+}
+
+.campo-texto {
+    width: 100%;
+    padding: 12px;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    background-color: #f5f5f5;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.campo-texto:focus { border-color: #c1121f; }
+
+.campo-textarea {
+    width: 100%;
+    padding: 12px;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    background-color: #f5f5f5;
+    outline: none;
+    min-height: 192px;
+    resize: vertical;
+    transition: border-color 0.3s;
+}
+
+.campo-textarea:focus { border-color: #c1121f; }
+
+.formulario-contacto .btn-grande {
+    width: 100%;
+    margin-top: 8px;
+}
+
+/* Alerta enviado */
+.alerta-enviado {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #1a1a1a;
+    padding: 20px 40px;
+}
+
+.oculto { display: none; }
+
+/* =============================================
+   PÁGINA: POLÍTICAS — MÓVIL
+   ============================================= */
+
+main.politicas {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.politicas-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.politicas-texto ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 16px;
+}
+
+.politicas-texto ul li {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #1a1a1a;
+    line-height: 1.6em;
+    list-style: disc;
+}
+
+ body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+
+    main {
+        flex: 1;
+    }
+
+/* =============================================
+   DESKTOP — min-width: 600px
+   ============================================= */
+
+@media only screen and (min-width: 600px) {
+
+    h1 { font-size: 48px; }
+    h2 { font-size: 40px; }
+    h3 { font-size: 36px; }
+    p  { font-size: 16px; }
+    a  { font-size: 20px; }
+
+    /* Nav */
+    .menu-hamburguesa { display: none; }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .nav-item { font-size: 18px; }
+
+    /* Inicio — desktop */
+    .imagen-hero { height: 600px; }
+
+    .servicios-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sobre-nosotros-contenido {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .personas { flex-direction: column; }
+
+    /* Proyectos — desktop */
+    .proyectos-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Servicios — desktop */
+    .servicio-item {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Sobre nosotros — desktop */
+    .equipo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .miembro {
+        grid-template-columns: auto 1fr;
+    }
+
+    /* Contacto — desktop */
+    main.contacto { align-items: center; }
+
+    /* Políticas — desktop */
+    main.politicas {
+        max-width: 100%;
+        padding: 40px 294px;
+    }
+
+}

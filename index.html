@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es-CR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Doulas y Jorge</title>
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css"> 
+
+    <!-- Google Fonts -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Scroll suave -->
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de hamburguesa -->
+    <div id="miNav" class="overlay">
+        <a href="javascript:void(0)" class="cerrar-overlay" onclick="cerrarNav()">&times;</a>
+        <div class="overlay-contenido">
+            <a class="activo-overlay" href="./index.html">Inicio</a>
+            <a href="./proyectos.html">Proyectos</a>
+            <a href="./servicios.html">Servicios</a>
+            <a href="./sobre-nosotros.html">Sobre nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+        </div>
+    </div>
+    <!-- Fin menú de hamburguesa -->
+
+    <header>
+        <nav>
+            <!-- Logo / ícono -->
+            <div class="nav-logo">
+                <span class="material-icons">interests</span>
+            </div>
+
+            <!-- Links de navegación (desktop) -->
+            <div class="nav-links">
+                <div class="nav-item">
+                    <a class="activo-nav" href="./index.html">Inicio</a>
+                </div>
+                <div class="nav-item">
+                    <a href="./proyectos.html">Proyectos</a>
+                </div>
+                <div class="nav-item">
+                    <a href="./servicios.html">Servicios</a>
+                </div>
+                <div class="nav-item">
+                    <a href="./sobre-nosotros.html">Sobre nosotros</a>
+                </div>
+                <div class="nav-item">
+                    <a href="./contacto.html">Contacto</a>
+                </div>
+            </div>
+
+            <!-- Botón hamburguesa (móvil) -->
+            <span class="menu-hamburguesa" onclick="abrirNav()">
+                <i class="fa fa-navicon" aria-hidden="true"></i>
+            </span>
+        </nav>
+    </header>
+
+    <main id="contenido" class="inicio">
+
+        <!-- Sección: imagen principal -->
+        <section class="inicio-hero">
+            <figure class="imagen-hero">
+                <img src="./img/hero.jpg"
+                     title="Imagen principal del portafolio"
+                     alt="Descripción de la imagen principal del portafolio.">
+            </figure>
+            <h1>Diseño Que Inspira</h1>
+            <p class="subtitulo">Transformando ideas en experiencias visuales memorables.</p>
+            <a href="./proyectos.html" class="btn-grande">Ver proyectos</a>
+        </section>
+
+        <!-- Sección: servicios -->
+        <section class="inicio-servicios">
+            <div class="servicios-header">
+                <h2>Servicios</h2>
+                <a href="./servicios.html" class="btn-pequeno-stroke">Ver más</a>
+            </div>
+
+            <div class="servicios-contenido">
+                <div class="servicio-tarjeta">
+                    <figure class="servicio-imagen">
+                        <img src="./img/servicio-marca.jpg"
+                             title="Diseño de marca"
+                             alt="Ejemplo de diseño de marca.">
+                    </figure>
+                    <h3>Diseño de marca</h3>
+                </div>
+                <div class="servicio-tarjeta">
+                    <figure class="servicio-imagen">
+                        <img src="./img/servicio-packaging.jpg"
+                             title="Packaging"
+                             alt="Ejemplo de diseño de packaging.">
+                    </figure>
+                    <h3>Packaging</h3>
+                </div>
+                <div class="servicio-tarjeta">
+                    <figure class="servicio-imagen">
+                        <img src="./img/servicio-obra.jpg"
+                             title="Obra artística"
+                             alt="Ejemplo de obra artística.">
+                    </figure>
+                    <h3>Obra artística</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: sobre nosotros -->
+        <section class="inicio-sobre-nosotros">
+            <h2>Sobre nosotros</h2>
+
+            <div class="sobre-nosotros-contenido">
+                <div class="personas">
+                    <figure class="persona-imagen">
+                        <img src="./img/persona-dos.jpg"
+                             title="Integrante del equipo"
+                             alt="Foto de perfil de integrante del equipo.">
+                    </figure>
+                    <figure class="persona-imagen">
+                        <img src="./img/persona-uno.jpg"
+                             title="Integrante del equipo"
+                             alt="Foto de perfil de integrante del equipo.">
+                    </figure>
+                </div>
+                <div class="sobre-nosotros-texto">
+                    <p>Detrás de cada diseño hay una historia. Descubre quienes somos y cómo abordamos cada proyecto creativo.</p>
+                    <a href="./sobre-nosotros.html" class="btn-pequeno-fill">Ver más</a>
+                </div>
+            </div>
+        </section>
+
+        <a href="./contacto.html" class="btn-grande btn-grande-contactanos">Contáctanos</a>
+
+    </main>
+
+    <footer>
+        <a href="#" class="footer-politicas">Política y Condiciones</a>
+    </footer>
+
+    <script type="text/javascript" src="./js/scripts.js"></script>
+</body>
+</html>

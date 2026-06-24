@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es-CR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | Portafolio</title>
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de hamburguesa -->
+    <div id="miNav" class="overlay">
+        <a href="javascript:void(0)" class="cerrar-overlay" onclick="cerrarNav()">&times;</a>
+        <div class="overlay-contenido">
+            <a href="./index.html">Inicio</a>
+            <a class="activo-overlay" href="./proyectos.html">Proyectos</a>
+            <a href="./servicios.html">Servicios</a>
+            <a href="./sobre-nosotros.html">Sobre nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+        </div>
+    </div>
+    <!-- Fin menú de hamburguesa -->
+
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <span class="material-icons">interests</span>
+            </div>
+            <div class="nav-links">
+                <div class="nav-item"><a href="./index.html">Inicio</a></div>
+                <div class="nav-item"><a class="activo-nav" href="./proyectos.html">Proyectos</a></div>
+                <div class="nav-item"><a href="./servicios.html">Servicios</a></div>
+                <div class="nav-item"><a href="./sobre-nosotros.html">Sobre nosotros</a></div>
+                <div class="nav-item"><a href="./contacto.html">Contacto</a></div>
+            </div>
+            <span class="menu-hamburguesa" onclick="abrirNav()">
+                <i class="fa fa-navicon" aria-hidden="true"></i>
+            </span>
+        </nav>
+    </header>
+
+    <main id="contenido" class="proyectos">
+
+        <h1>Proyectos</h1>
+
+        <!-- Filtros de categoría -->
+        <div class="filtros">
+            <button class="btn-filtro activo-filtro" data-categoria="todos">Diseño de marca</button>
+            <button class="btn-filtro" data-categoria="packaging">Packaging</button>
+            <button class="btn-filtro" data-categoria="obras">Obra artísticas</button>
+        </div>
+
+        <!-- Grid de proyectos -->
+        <div class="proyectos-grid">
+
+            <article class="proyecto-tarjeta">
+                <figure class="proyecto-imagen">
+                    <img src="./img/proyecto-1.jpg"
+                         title="Nombre del proyecto"
+                         alt="Descripción del proyecto 1.">
+                </figure>
+                <h3>Proyectos</h3>
+                <p>Norem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn-pequeno-stroke">Ver más</a>
+            </article>
+
+            <article class="proyecto-tarjeta">
+                <figure class="proyecto-imagen">
+                    <img src="./img/proyecto-2.jpg"
+                         title="Nombre del proyecto"
+                         alt="Descripción del proyecto 2.">
+                </figure>
+                <h3>Proyectos</h3>
+                <p>Norem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn-pequeno-stroke">Ver más</a>
+            </article>
+
+            <article class="proyecto-tarjeta">
+                <figure class="proyecto-imagen">
+                    <img src="./img/proyecto-3.jpg"
+                         title="Nombre del proyecto"
+                         alt="Descripción del proyecto 3.">
+                </figure>
+                <h3>Proyectos</h3>
+                <p>Norem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn-pequeno-stroke">Ver más</a>
+            </article>
+
+            <article class="proyecto-tarjeta">
+                <figure class="proyecto-imagen">
+                    <img src="./img/proyecto-4.jpg"
+                         title="Nombre del proyecto"
+                         alt="Descripción del proyecto 4.">
+                </figure>
+                <h3>Proyectos</h3>
+                <p>Norem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn-pequeno-stroke">Ver más</a>
+            </article>
+
+        </div>
+
+        <a href="./contacto.html" class="btn-grande btn-grande-contactanos">Contáctanos</a>
+
+    </main>
+
+    <!-- Modal: más sobre el proyecto -->
+    <div id="modal-proyecto" class="modal">
+        <div class="modal-contenido">
+            <button class="modal-cerrar" onclick="cerrarModal()">
+                <span class="material-icons">close</span>
+            </button>
+            <figure class="modal-imagen">
+                <img src="" id="modal-img" alt="">
+            </figure>
+            <div class="modal-info">
+                <h3 id="modal-titulo">Proyecto</h3>
+                <p id="modal-descripcion">Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum.</p>
+            </div>
+            <a href="./contacto.html" class="btn-grande">Contáctanos</a>
+        </div>
+    </div>
+    <!-- Fin modal -->
+
+    <footer>
+        <a href="./politicas.html" class="footer-politicas">Política y Condiciones</a>
+    </footer>
+
+    <script type="text/javascript" src="./js/scripts.js"></script>
+</body>
+</html>

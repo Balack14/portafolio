@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es-CR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nosotros | Portafolio</title>
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body>
+
+    <div id="miNav" class="overlay">
+        <a href="javascript:void(0)" class="cerrar-overlay" onclick="cerrarNav()">&times;</a>
+        <div class="overlay-contenido">
+            <a href="./index.html">Inicio</a>
+            <a href="./proyectos.html">Proyectos</a>
+            <a href="./servicios.html">Servicios</a>
+            <a class="activo-overlay" href="./sobre-nosotros.html">Sobre nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <span class="material-icons">interests</span>
+            </div>
+            <div class="nav-links">
+                <div class="nav-item"><a href="./index.html">Inicio</a></div>
+                <div class="nav-item"><a href="./proyectos.html">Proyectos</a></div>
+                <div class="nav-item"><a href="./servicios.html">Servicios</a></div>
+                <div class="nav-item"><a class="activo-nav" href="./sobre-nosotros.html">Sobre nosotros</a></div>
+                <div class="nav-item"><a href="./contacto.html">Contacto</a></div>
+            </div>
+            <span class="menu-hamburguesa" onclick="abrirNav()">
+                <i class="fa fa-navicon" aria-hidden="true"></i>
+            </span>
+        </nav>
+    </header>
+
+    <main id="contenido" class="sobre-nosotros">
+
+        <h1>Conócenos</h1>
+
+        <div class="equipo-grid">
+
+            <article class="miembro">
+                <figure class="miembro-imagen">
+                    <img src="./img/persona-uno.jpg"
+                         title="Nombre del integrante"
+                         alt="Foto de perfil del integrante del equipo.">
+                </figure>
+                <div class="miembro-info">
+                    <h2>Perfil profesional</h2>
+                    <p>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                    <hr class="linea-nombre">
+                    <h3>Nombre</h3>
+                </div>
+            </article>
+
+            <article class="miembro">
+                <figure class="miembro-imagen">
+                    <img src="./img/persona-dos.jpg"
+                         title="Nombre del integrante"
+                         alt="Foto de perfil del integrante del equipo.">
+                </figure>
+                <div class="miembro-info">
+                    <h2>Perfil profesional</h2>
+                    <p>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                    <hr class="linea-nombre">
+                    <h3>Nombre</h3>
+                </div>
+            </article>
+
+        </div>
+
+        <a href="./contacto.html" class="btn-grande btn-grande-contactanos">Contáctanos</a>
+
+    </main>
+
+    <footer>
+        <a href="./politicas.html" class="footer-politicas">Política y Condiciones</a>
+    </footer>
+
+    <script type="text/javascript" src="./js/scripts.js"></script>
+</body>
+</html>
