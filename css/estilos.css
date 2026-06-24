@@ -88,7 +88,7 @@ img {
     align-self: flex-start;
 }
 
-.btn-grande:hover  { background-color: #DBC9C9; }
+.btn-grande:hover  { background-color: #DBC9C9; color: #1a1a1a; }
 .btn-grande:active { background-color: #8B121A; transform: translateY(2px); }
 
 .btn-pequeno-stroke {
