@@ -88,7 +88,7 @@ img {
     align-self: flex-start;
 }
 
-.btn-grande:hover  { background-color: #DBC9C9; color: #1a1a1a; }
+.btn-grande:hover  { background-color: #DBC9C9; color: #4D4242; }
 .btn-grande:active { background-color: #8B121A; transform: translateY(2px); }
 
 .btn-pequeno-stroke {
@@ -104,8 +104,9 @@ img {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.btn-pequeno-stroke:hover  { color: #656565; border-color: #656565; }
-.btn-pequeno-stroke:active { color: #8B121A; border-color: #8B121A; transform: translateY(2px);}
+.btn-pequeno-stroke:hover  { color: #DBC9C9; background-color: #656565; border: 2px solid #656565;}
+
+.btn-pequeno-stroke:active { color: #8B121A; border-color: #8B121A; transform: translateY(2px); background-color: transparent; }
 
 .btn-pequeno-fill {
     display: inline-block;
@@ -119,7 +120,7 @@ img {
     border-radius: 20px;
 }
 
-.btn-pequeno-fill:hover  { background-color: #1a1a1a; color: #ffffff; }
+.btn-pequeno-fill:hover  { background-color: #a00f1a; }
 .btn-pequeno-fill:active { background-color: #7a0b14; }
 
 /* Overlay men de hamburguesa */
@@ -269,6 +270,7 @@ main.inicio {
         "subtitulo"
         "boton";
     gap: 16px;
+    padding: 0  0 24px 0;
 }
 
 .inicio-hero figure {
