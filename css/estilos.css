@@ -88,8 +88,8 @@ img {
     align-self: flex-start;
 }
 
-.btn-grande:hover  { background-color: #BC1823; }
-.btn-grande:active { background-color: #7a0b14; transform: translateY(2px); }
+.btn-grande:hover  { background-color: #DBC9C9; }
+.btn-grande:active { background-color: #8B121A; transform: translateY(2px); }
 
 .btn-pequeno-stroke {
     display: inline-block;
