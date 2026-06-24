@@ -119,7 +119,7 @@ img {
     border-radius: 20px;
 }
 
-.btn-pequeno-fill:hover  { background-color: #a00f1a; }
+.btn-pequeno-fill:hover  { background-color: #1a1a1a; color: #ffffff; }
 .btn-pequeno-fill:active { background-color: #7a0b14; }
 
 /* Overlay men de hamburguesa */
