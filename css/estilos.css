@@ -120,8 +120,8 @@ img {
     border-radius: 20px;
 }
 
-.btn-pequeno-fill:hover  { background-color: #a00f1a; }
-.btn-pequeno-fill:active { background-color: #7a0b14; }
+.btn-pequeno-fill:hover  { background-color: #DBC9C9; color: #656565; } 
+.btn-pequeno-fill:active { background-color: #8B121A; }
 
 /* Overlay men de hamburguesa */
 
@@ -132,7 +132,7 @@ img {
     z-index: 100;
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.922);
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -247,8 +247,7 @@ footer {
 
 .linea-separadora {
     border: none;
-    border-top: 1px solid #1a1a1a;
-    margin: 0 16px;
+    border-top: 1px solid #BC1823;
 }
 
 /* Pagina inicio */
@@ -366,11 +365,16 @@ main.inicio {
     gap: 16px;
 }
 
-.sobre-nosotros-contenido {
+.sobre-nosotros-texto {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
+
+.sobre-nosotros-texto .btn-pequeno-fill {
+    align-self: flex-start;
+}
+
 
 .personas {
     display: flex;
@@ -390,9 +394,7 @@ main.inicio {
     object-fit: cover;
 }
 
-/* =============================================
-   PÁGINA: PROYECTOS — MÓVIL
-   ============================================= */
+/* Página de proyectos */
 
 main.proyectos h1 { text-align: center; }
 
@@ -502,9 +504,7 @@ main.proyectos {
     object-fit: cover;
 }
 
-/* =============================================
-   PÁGINA: SERVICIOS — MÓVIL
-   ============================================= */
+/* Página de servicios Móvil */
 
 main.servicios {
     padding: 24px 16px;
@@ -524,9 +524,7 @@ main.servicios h1 { margin-bottom: 24px; }
 
 .servicio-texto { display: flex; flex-direction: column; gap: 8px; }
 
-/* =============================================
-   PÁGINA: SOBRE NOSOTROS — MÓVIL
-   ============================================= */
+/* Página de sobre nosotros Móvil */
 
 main.sobre-nosotros {
     padding: 24px 16px;
@@ -572,9 +570,7 @@ main.sobre-nosotros {
     width: 264px;
 }
 
-/* =============================================
-   PÁGINA: CONTACTO — MÓVIL
-   ============================================= */
+/* Página de contacto Móvil */
 
 main.contacto {
     padding: 24px 16px;
@@ -644,9 +640,7 @@ main.contacto {
 
 .oculto { display: none; }
 
-/* =============================================
-   PÁGINA: POLÍTICAS — MÓVIL
-   ============================================= */
+/* Página de políticas Móvil */
 
 main.politicas {
     padding: 24px 16px;
@@ -688,9 +682,7 @@ main.politicas {
         flex: 1;
     }
 
-/* =============================================
-   DESKTOP — min-width: 600px
-   ============================================= */
+/* Versión desktop */
 
 @media only screen and (min-width: 600px) {
 
